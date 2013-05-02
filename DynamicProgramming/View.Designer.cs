@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel = new System.Windows.Forms.Panel();
+            this.calculateButton = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,26 +42,28 @@
             this.textBoxB3 = new System.Windows.Forms.TextBox();
             this.textBoxB2 = new System.Windows.Forms.TextBox();
             this.textBoxB1 = new System.Windows.Forms.TextBox();
-            this.calculateButton = new System.Windows.Forms.Button();
             this.tableContainerTabControl = new System.Windows.Forms.TabControl();
             this.stepTabPage4 = new System.Windows.Forms.TabPage();
-            this.stepTabPage3 = new System.Windows.Forms.TabPage();
-            this.stepTabPage2 = new System.Windows.Forms.TabPage();
-            this.stepTabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.stepTabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.stepTabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.stepTabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.panel.SuspendLayout();
             this.tableContainerTabControl.SuspendLayout();
             this.stepTabPage4.SuspendLayout();
-            this.stepTabPage3.SuspendLayout();
-            this.stepTabPage2.SuspendLayout();
-            this.stepTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.stepTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.stepTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.stepTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel
@@ -83,8 +86,18 @@
             this.panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel.Location = new System.Drawing.Point(0, 0);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(756, 67);
+            this.panel.Size = new System.Drawing.Size(756, 40);
             this.panel.TabIndex = 0;
+            // 
+            // calculateButton
+            // 
+            this.calculateButton.Location = new System.Drawing.Point(674, 4);
+            this.calculateButton.Name = "calculateButton";
+            this.calculateButton.Size = new System.Drawing.Size(75, 23);
+            this.calculateButton.TabIndex = 6;
+            this.calculateButton.Text = "Calculate";
+            this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // label6
             // 
@@ -182,16 +195,6 @@
             this.textBoxB1.Size = new System.Drawing.Size(60, 20);
             this.textBoxB1.TabIndex = 0;
             // 
-            // calculateButton
-            // 
-            this.calculateButton.Location = new System.Drawing.Point(674, 4);
-            this.calculateButton.Name = "calculateButton";
-            this.calculateButton.Size = new System.Drawing.Size(75, 23);
-            this.calculateButton.TabIndex = 6;
-            this.calculateButton.Text = "Calculate";
-            this.calculateButton.UseVisualStyleBackColor = true;
-            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
-            // 
             // tableContainerTabControl
             // 
             this.tableContainerTabControl.Controls.Add(this.stepTabPage4);
@@ -199,10 +202,10 @@
             this.tableContainerTabControl.Controls.Add(this.stepTabPage2);
             this.tableContainerTabControl.Controls.Add(this.stepTabPage1);
             this.tableContainerTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableContainerTabControl.Location = new System.Drawing.Point(0, 67);
+            this.tableContainerTabControl.Location = new System.Drawing.Point(0, 40);
             this.tableContainerTabControl.Name = "tableContainerTabControl";
             this.tableContainerTabControl.SelectedIndex = 0;
-            this.tableContainerTabControl.Size = new System.Drawing.Size(756, 391);
+            this.tableContainerTabControl.Size = new System.Drawing.Size(756, 418);
             this.tableContainerTabControl.TabIndex = 1;
             // 
             // stepTabPage4
@@ -211,43 +214,10 @@
             this.stepTabPage4.Location = new System.Drawing.Point(4, 22);
             this.stepTabPage4.Name = "stepTabPage4";
             this.stepTabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.stepTabPage4.Size = new System.Drawing.Size(748, 365);
+            this.stepTabPage4.Size = new System.Drawing.Size(748, 392);
             this.stepTabPage4.TabIndex = 0;
             this.stepTabPage4.Text = "Step 4";
             this.stepTabPage4.UseVisualStyleBackColor = true;
-            // 
-            // stepTabPage3
-            // 
-            this.stepTabPage3.Controls.Add(this.dataGridView3);
-            this.stepTabPage3.Location = new System.Drawing.Point(4, 22);
-            this.stepTabPage3.Name = "stepTabPage3";
-            this.stepTabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.stepTabPage3.Size = new System.Drawing.Size(704, 412);
-            this.stepTabPage3.TabIndex = 1;
-            this.stepTabPage3.Text = "Step 3";
-            this.stepTabPage3.UseVisualStyleBackColor = true;
-            // 
-            // stepTabPage2
-            // 
-            this.stepTabPage2.Controls.Add(this.dataGridView2);
-            this.stepTabPage2.Location = new System.Drawing.Point(4, 22);
-            this.stepTabPage2.Name = "stepTabPage2";
-            this.stepTabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.stepTabPage2.Size = new System.Drawing.Size(704, 412);
-            this.stepTabPage2.TabIndex = 2;
-            this.stepTabPage2.Text = "Step 2";
-            this.stepTabPage2.UseVisualStyleBackColor = true;
-            // 
-            // stepTabPage1
-            // 
-            this.stepTabPage1.Controls.Add(this.dataGridView1);
-            this.stepTabPage1.Location = new System.Drawing.Point(4, 22);
-            this.stepTabPage1.Name = "stepTabPage1";
-            this.stepTabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.stepTabPage1.Size = new System.Drawing.Size(704, 412);
-            this.stepTabPage1.TabIndex = 3;
-            this.stepTabPage1.Text = "Step 1";
-            this.stepTabPage1.UseVisualStyleBackColor = true;
             // 
             // dataGridView4
             // 
@@ -255,8 +225,19 @@
             this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView4.Location = new System.Drawing.Point(3, 3);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(742, 359);
+            this.dataGridView4.Size = new System.Drawing.Size(742, 386);
             this.dataGridView4.TabIndex = 0;
+            // 
+            // stepTabPage3
+            // 
+            this.stepTabPage3.Controls.Add(this.dataGridView3);
+            this.stepTabPage3.Location = new System.Drawing.Point(4, 22);
+            this.stepTabPage3.Name = "stepTabPage3";
+            this.stepTabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.stepTabPage3.Size = new System.Drawing.Size(748, 392);
+            this.stepTabPage3.TabIndex = 1;
+            this.stepTabPage3.Text = "Step 3";
+            this.stepTabPage3.UseVisualStyleBackColor = true;
             // 
             // dataGridView3
             // 
@@ -264,8 +245,19 @@
             this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView3.Location = new System.Drawing.Point(3, 3);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(698, 406);
+            this.dataGridView3.Size = new System.Drawing.Size(742, 386);
             this.dataGridView3.TabIndex = 0;
+            // 
+            // stepTabPage2
+            // 
+            this.stepTabPage2.Controls.Add(this.dataGridView2);
+            this.stepTabPage2.Location = new System.Drawing.Point(4, 22);
+            this.stepTabPage2.Name = "stepTabPage2";
+            this.stepTabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.stepTabPage2.Size = new System.Drawing.Size(748, 392);
+            this.stepTabPage2.TabIndex = 2;
+            this.stepTabPage2.Text = "Step 2";
+            this.stepTabPage2.UseVisualStyleBackColor = true;
             // 
             // dataGridView2
             // 
@@ -273,8 +265,19 @@
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(3, 3);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(698, 406);
+            this.dataGridView2.Size = new System.Drawing.Size(742, 386);
             this.dataGridView2.TabIndex = 0;
+            // 
+            // stepTabPage1
+            // 
+            this.stepTabPage1.Controls.Add(this.dataGridView1);
+            this.stepTabPage1.Location = new System.Drawing.Point(4, 22);
+            this.stepTabPage1.Name = "stepTabPage1";
+            this.stepTabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.stepTabPage1.Size = new System.Drawing.Size(748, 392);
+            this.stepTabPage1.TabIndex = 3;
+            this.stepTabPage1.Text = "Step 1";
+            this.stepTabPage1.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -282,14 +285,30 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(698, 406);
+            this.dataGridView1.Size = new System.Drawing.Size(742, 386);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 436);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(756, 22);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip2";
+            // 
+            // toolStripStatusLabel
+            // 
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(0, 17);
             // 
             // View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(756, 458);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tableContainerTabControl);
             this.Controls.Add(this.panel);
             this.MaximizeBox = false;
@@ -299,14 +318,17 @@
             this.panel.PerformLayout();
             this.tableContainerTabControl.ResumeLayout(false);
             this.stepTabPage4.ResumeLayout(false);
-            this.stepTabPage3.ResumeLayout(false);
-            this.stepTabPage2.ResumeLayout(false);
-            this.stepTabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.stepTabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.stepTabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.stepTabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -335,6 +357,8 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TabPage stepTabPage1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
     }
 }
 

@@ -28,6 +28,22 @@ namespace DynamicProgramming
             dataGridView4.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
         }
 
+        private void OutOptimumValues(List<KeyValuePair<int,int>> optimumValues)
+        {
+            String valueText = "X0 = 0 -> ";
+
+            for (int j = 1, i = optimumValues.Count() - 1; i >= 0; i--, j++)
+            {
+                String xS = "X" + j.ToString() + " = ";
+                valueText += xS;
+                valueText += optimumValues[i].Value.ToString();
+                valueText += ("(" + optimumValues[i].Key.ToString() + ")");
+                valueText += (i > 0 ? " -> " : "");
+            }
+
+            toolStripStatusLabel.Text = valueText;
+        }
+
         private void calculateButton_Click(object sender, EventArgs e)
         {
             if (!IsInputInvalid())
@@ -38,6 +54,7 @@ namespace DynamicProgramming
                     PlaningCore core = new PlaningCore(GetBValues());
                     var t = core.Tables;
                     SetTableData(core.Tables);
+                    OutOptimumValues(core.GetListOptimumValues());
                 }
                 catch (SystemException exeption)
                 {
