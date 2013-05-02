@@ -8,12 +8,10 @@ namespace DynamicProgramming
 {
     class Record
     {
-        private int c1 = 220; // HARDCODE!!!!!!!!!!!!!!!!!!!!
-        private int c2 = 500;
+        private int c1;
+        private int c2;
 
         private int xState;
-
-       // private List<int> xControl;
 
         private List<int> fList;
 
@@ -25,14 +23,24 @@ namespace DynamicProgramming
       
         public Record(int xState, Dictionary<int, int> fPreview)
         {
-            fList = new List<int>();
             this.xState = xState;
-           // this.xControl = xControl;
             this.fPreview = fPreview;
+            InitializeParameters();
             InitializeF();
         }
 
-        void InitializeF()
+        private void InitializeParameters()
+        {
+            if (!ParametersManager.IsParametersSetted())
+            {
+                throw new SystemException("Parameters do not setted.");
+            }
+            c1 = (int)ParametersManager.CarRentPrice;
+            c2 = (int)ParametersManager.CarDealPrice;
+            fList = new List<int>();
+        }
+
+        private void InitializeF()
         {
             foreach (var fp in fPreview)
             {

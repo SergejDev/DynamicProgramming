@@ -7,3 +7,12 @@ D:\Projects\DynamicProgramming\DynamicProgramming\DynamicProgramming\bin\Debug\D
 D:\Projects\DynamicProgramming\DynamicProgramming\DynamicProgramming\obj\Debug\DynamicProgramming.exe
 D:\Projects\DynamicProgramming\DynamicProgramming\DynamicProgramming\obj\Debug\DynamicProgramming.pdb
 D:\Projects\DynamicProgramming\DynamicProgramming\DynamicProgramming\obj\Debug\DynamicProgramming.Form1.resources
+D:\Programming\CSharp\DynamicProgramming\DynamicProgramming\bin\Debug\DynamicProgramming.exe.config
+D:\Programming\CSharp\DynamicProgramming\DynamicProgramming\obj\Debug\DynamicProgramming.exe
+D:\Programming\CSharp\DynamicProgramming\DynamicProgramming\obj\Debug\DynamicProgramming.pdb
+D:\Programming\CSharp\DynamicProgramming\DynamicProgramming\bin\Debug\DynamicProgramming.exe
+D:\Programming\CSharp\DynamicProgramming\DynamicProgramming\bin\Debug\DynamicProgramming.pdb
+D:\Programming\CSharp\DynamicProgramming\DynamicProgramming\obj\Debug\DynamicProgramming.csprojResolveAssemblyReference.cache
+D:\Programming\CSharp\DynamicProgramming\DynamicProgramming\obj\Debug\DynamicProgramming.Properties.Resources.resources
+D:\Programming\CSharp\DynamicProgramming\DynamicProgramming\obj\Debug\DynamicProgramming.csproj.GenerateResource.Cache
+D:\Programming\CSharp\DynamicProgramming\DynamicProgramming\obj\Debug\DynamicProgramming.View.resources

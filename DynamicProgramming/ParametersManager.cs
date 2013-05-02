@@ -8,12 +8,19 @@ namespace DynamicProgramming
 {
     public static class ParametersManager
     {
-        private static int carRentPrice;
+        public static int? CarRentPrice { set; get; }
 
-        private static int carDealPrice;
+        public static int? CarDealPrice { set; get; }
 
-        public static int CarRentPrice { set; get; }
+        static ParametersManager()
+        {
+            CarRentPrice = null;
+            CarDealPrice = null;
+        }
 
-        public static int CarDealPrice { set; get; }
+        public static bool IsParametersSetted()
+        {
+            return (CarDealPrice != null && CarRentPrice != null);
+        }
     }
 }
