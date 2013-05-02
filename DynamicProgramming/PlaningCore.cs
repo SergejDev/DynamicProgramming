@@ -10,29 +10,55 @@ namespace DynamicProgramming
     {
         private List<int> b;
 
-        //private int weeksCount;
-
         private List<Table> tables;
 
         public PlaningCore(List<int> b)
         {
             this.b = b;
-          //  this.weeksCount = ConfigurationManager.GetWeeksCount();
+            tables = new List<Table>();
             FillTables();
         }
 
-        private List<int> FillXState()
+        private List<int> GetXStateList(int index)
         {
-            //Anya's
-        }
+            List<int> xStateList = new List<int>();
+            if (index > 0)
+            {
+                var rangeB = b.GetRange(index - 1, b.Count - index + 1);
+                var max = rangeB.Max();
 
+                for (int i = b[index - 1]; i <= max; i++)
+                {
+                    xStateList.Add(i);
+                }
+            }
+
+            if (index == 0)
+            {
+                xStateList.Add(0);
+            }
+                
+            return xStateList;
+        }
+        
         private void FillTables()
         {
-            foreach (var bCurrent in b)
+            Dictionary<int, int> FPreview = new Dictionary<int, int>(){ {b[b.Count()-1], 0} };
+
+            for (int i = (b.Count()-1); i >= 0; i-- )
             {
-                tables.Add(new Table(bCurrent, FillXState()));
+                List<int> xState = GetXStateList(i);
+                Table table = new Table(xState, FPreview);
+                FPreview = table.NewFPreview;
+                tables.Add(table);
             }
+
         }
+
+        public List<Table> Tables
+        {
+            get { return tables; }
+        } 
 
 
     }

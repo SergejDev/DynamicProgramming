@@ -1,0 +1,9 @@
+D:\Projects\DynamicProgramming\DynamicProgramming\DynamicProgramming\bin\Debug\DynamicProgramming.exe.config
+D:\Projects\DynamicProgramming\DynamicProgramming\DynamicProgramming\obj\Debug\DynamicProgramming.csprojResolveAssemblyReference.cache
+D:\Projects\DynamicProgramming\DynamicProgramming\DynamicProgramming\obj\Debug\DynamicProgramming.Properties.Resources.resources
+D:\Projects\DynamicProgramming\DynamicProgramming\DynamicProgramming\obj\Debug\DynamicProgramming.csproj.GenerateResource.Cache
+D:\Projects\DynamicProgramming\DynamicProgramming\DynamicProgramming\bin\Debug\DynamicProgramming.exe
+D:\Projects\DynamicProgramming\DynamicProgramming\DynamicProgramming\bin\Debug\DynamicProgramming.pdb
+D:\Projects\DynamicProgramming\DynamicProgramming\DynamicProgramming\obj\Debug\DynamicProgramming.exe
+D:\Projects\DynamicProgramming\DynamicProgramming\DynamicProgramming\obj\Debug\DynamicProgramming.pdb
+D:\Projects\DynamicProgramming\DynamicProgramming\DynamicProgramming\obj\Debug\DynamicProgramming.Form1.resources
