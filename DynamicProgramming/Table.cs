@@ -17,6 +17,28 @@ namespace DynamicProgramming
 
         private Dictionary<int, int> lastFPreview;
 
+        public KeyValuePair<int, int> GetOptimumValues()
+        {
+            if (records.Count == 0)
+            {
+                return new KeyValuePair<int, int>(0, 0);
+            }
+
+            int minF = records[0].OptimumF;
+            int minX = records[0].OptimumXControl;
+
+            foreach (var record in records)
+            {
+                if (record.OptimumF < minF)
+                {
+                    minF = record.OptimumF;
+                    minX = record.OptimumXControl;
+                }
+
+            }
+
+            return new KeyValuePair<int, int>(minF, minX);
+        }
 
         public Table(List<int> xState, Dictionary<int, int> lastFPreview)
         {
@@ -40,11 +62,11 @@ namespace DynamicProgramming
         public List<Record> Records
         {
             get { return records; }
-        } 
+        }
 
-        public Dictionary<int,int> NewFPreview
+        public Dictionary<int, int> NewFPreview
         {
             get { return newFPreview; }
-        } 
+        }
     }
 }

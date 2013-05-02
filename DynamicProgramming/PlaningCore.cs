@@ -19,6 +19,17 @@ namespace DynamicProgramming
             FillTables();
         }
 
+        public List<KeyValuePair<int, int>> GetListOptimumValues()
+        {
+            List<KeyValuePair<int, int>> listOptimumValues = new List<KeyValuePair<int, int>>();
+         
+            foreach (var table in tables)
+            {
+                listOptimumValues.Add(table.GetOptimumValues());
+            }
+            return listOptimumValues;
+        }
+
         private List<int> GetXStateList(int index)
         {
             List<int> xStateList = new List<int>();
