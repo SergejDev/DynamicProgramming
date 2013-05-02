@@ -83,13 +83,13 @@
             this.panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel.Location = new System.Drawing.Point(0, 0);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(712, 67);
+            this.panel.Size = new System.Drawing.Size(756, 67);
             this.panel.TabIndex = 0;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(524, 8);
+            this.label6.Location = new System.Drawing.Point(538, 8);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(20, 13);
             this.label6.TabIndex = 1;
@@ -98,7 +98,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(426, 8);
+            this.label5.Location = new System.Drawing.Point(440, 8);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(20, 13);
             this.label5.TabIndex = 1;
@@ -142,38 +142,38 @@
             // 
             // textBoxC2
             // 
-            this.textBoxC2.Location = new System.Drawing.Point(549, 5);
+            this.textBoxC2.Location = new System.Drawing.Point(563, 5);
             this.textBoxC2.Name = "textBoxC2";
             this.textBoxC2.Size = new System.Drawing.Size(60, 20);
-            this.textBoxC2.TabIndex = 0;
+            this.textBoxC2.TabIndex = 5;
             // 
             // textBoxC1
             // 
-            this.textBoxC1.Location = new System.Drawing.Point(451, 5);
+            this.textBoxC1.Location = new System.Drawing.Point(465, 5);
             this.textBoxC1.Name = "textBoxC1";
             this.textBoxC1.Size = new System.Drawing.Size(60, 20);
-            this.textBoxC1.TabIndex = 0;
+            this.textBoxC1.TabIndex = 4;
             // 
             // textBoxB4
             // 
             this.textBoxB4.Location = new System.Drawing.Point(340, 5);
             this.textBoxB4.Name = "textBoxB4";
             this.textBoxB4.Size = new System.Drawing.Size(60, 20);
-            this.textBoxB4.TabIndex = 0;
+            this.textBoxB4.TabIndex = 3;
             // 
             // textBoxB3
             // 
             this.textBoxB3.Location = new System.Drawing.Point(237, 5);
             this.textBoxB3.Name = "textBoxB3";
             this.textBoxB3.Size = new System.Drawing.Size(60, 20);
-            this.textBoxB3.TabIndex = 0;
+            this.textBoxB3.TabIndex = 2;
             // 
             // textBoxB2
             // 
             this.textBoxB2.Location = new System.Drawing.Point(137, 5);
             this.textBoxB2.Name = "textBoxB2";
             this.textBoxB2.Size = new System.Drawing.Size(60, 20);
-            this.textBoxB2.TabIndex = 0;
+            this.textBoxB2.TabIndex = 1;
             // 
             // textBoxB1
             // 
@@ -184,10 +184,10 @@
             // 
             // calculateButton
             // 
-            this.calculateButton.Location = new System.Drawing.Point(624, 4);
+            this.calculateButton.Location = new System.Drawing.Point(674, 4);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(75, 23);
-            this.calculateButton.TabIndex = 2;
+            this.calculateButton.TabIndex = 6;
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
             this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
@@ -202,7 +202,7 @@
             this.tableContainerTabControl.Location = new System.Drawing.Point(0, 67);
             this.tableContainerTabControl.Name = "tableContainerTabControl";
             this.tableContainerTabControl.SelectedIndex = 0;
-            this.tableContainerTabControl.Size = new System.Drawing.Size(712, 438);
+            this.tableContainerTabControl.Size = new System.Drawing.Size(756, 391);
             this.tableContainerTabControl.TabIndex = 1;
             // 
             // stepTabPage4
@@ -211,7 +211,7 @@
             this.stepTabPage4.Location = new System.Drawing.Point(4, 22);
             this.stepTabPage4.Name = "stepTabPage4";
             this.stepTabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.stepTabPage4.Size = new System.Drawing.Size(704, 412);
+            this.stepTabPage4.Size = new System.Drawing.Size(748, 365);
             this.stepTabPage4.TabIndex = 0;
             this.stepTabPage4.Text = "Step 4";
             this.stepTabPage4.UseVisualStyleBackColor = true;
@@ -255,7 +255,7 @@
             this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView4.Location = new System.Drawing.Point(3, 3);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(698, 406);
+            this.dataGridView4.Size = new System.Drawing.Size(742, 359);
             this.dataGridView4.TabIndex = 0;
             // 
             // dataGridView3
@@ -289,7 +289,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(712, 505);
+            this.ClientSize = new System.Drawing.Size(756, 458);
             this.Controls.Add(this.tableContainerTabControl);
             this.Controls.Add(this.panel);
             this.MaximizeBox = false;

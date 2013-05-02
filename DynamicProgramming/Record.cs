@@ -63,6 +63,11 @@ namespace DynamicProgramming
             }       
         }
 
+        public int XState
+        {
+            get { return xState; }
+        }
+
         public int OptimumF
         {
             get { return optimumF; }
@@ -71,6 +76,16 @@ namespace DynamicProgramming
         public int OptimumXControl
         {
             get { return optimumXControl; }
+        }
+
+        public List<int> FList
+        {
+            get { return fList; }
+        }
+
+        public Dictionary<int, int> FPreview
+        {
+            get { return fPreview; }
         }
 
         private void SetOptimumValues(int tempXControl, int tempF)
